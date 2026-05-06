@@ -18,15 +18,6 @@ export default function App() {
         </nav>
       </header>
 
-      <h1>Cocinas y Mobiliario Arquitectónico en Medellín</h1>
-
-<p>
-Diseñamos y fabricamos cocinas integrales, closets y vestieres modernos en Medellín y Oriente Antioqueño.
-Calidad premium, diseño a medida y entrega profesional.
-</p>
-
-<h2>Diseño de muebles a medida en Medellín y Antioquia</h2>
-
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/proyectos" element={<Proyectos />} />
