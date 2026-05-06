@@ -83,18 +83,6 @@ export default function Home() {
 Servicio en Medellín, Envigado, Sabaneta, Rionegro, La Ceja, Marinilla y Antioquia.
 </p>
 
-<section style={{padding:"60px 20px", textAlign:"center"}}>
-  <h2>Estamos en Medellín</h2>
-
-  <iframe
-    src="https://www.google.com/maps?q=Medellin&output=embed"
-    width="100%"
-    height="300"
-    style={{border:0, borderRadius:"12px", marginTop:"20px"}}
-    loading="lazy"
-  ></iframe>
-</section>
-
 </div>
 
       </motion.div>
