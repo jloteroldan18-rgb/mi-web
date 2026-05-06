@@ -355,3 +355,7 @@ html {
 .whatsapp-float:hover {
   transform: scale(1.1);
 }
+
+html {
+  scroll-behavior: smooth;
+}
