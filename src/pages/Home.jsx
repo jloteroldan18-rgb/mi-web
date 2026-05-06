@@ -18,12 +18,14 @@ export default function Home() {
       >
         <h1>Mobiliario Arquitectónico Premium</h1>
 
-        <p>
-          Diseñamos espacios modernos</p>
+        <section>
+  <h2 className="fade-up">Diseñamos espacios modernos</h2>
+  <p className="fade-up">
+     Medellín • Rionegro • La Ceja • La Unión • Oriente y Occidente Antioqueño
+  </p>
+</section>
 
-          <p>
-          Medellín • Rionegro • La Ceja • La Unión • Oriente y Occidente Antioqueño</p>
-
+      
        <div className="botones">
   <a href="/contacto">
     <button>Solicitar Cotizaciòn</button>
@@ -35,6 +37,27 @@ export default function Home() {
   >
     <button>Hablar por WhatsApp</button>
   </a>
+
+import { useEffect } from "react";
+
+useEffect(() => {
+  const elements = document.querySelectorAll(".fade-up");
+
+  const reveal = () => {
+    elements.forEach(el => {
+      const top = el.getBoundingClientRect().top;
+
+      if (top < window.innerHeight - 100) {
+        el.classList.add("show");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", reveal);
+  reveal(); // se ejecuta al cargar
+
+  return () => window.removeEventListener("scroll", reveal);
+}, []);
 
 </div>
 
